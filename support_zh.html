@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番茄鳄 - 技术支持</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #81C784 0%, #4CAF50 100%);
+            border-radius: 22px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section h2 {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8f5e9;
+        }
+        
+        .section p {
+            color: #555;
+            margin-bottom: 12px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 12px 0;
+            padding-left: 35px;
+            position: relative;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .faq-item {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .faq-item h3 {
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        .faq-item p {
+            color: #666;
+            margin: 0;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .contact-card h2 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+            border: none;
+            padding: 0;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #333;
+        }
+        
+        .contact-item .icon {
+            font-size: 1.3em;
+        }
+        
+        .contact-item a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .response-time {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .footer {
+            background: #f5f5f5;
+            padding: 25px;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 25px 20px;
+            }
+            
+            .app-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">🐊</div>
+            <h1>番茄鳄</h1>
+            <p class="subtitle">专注学习，高效打卡</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>📱 关于应用</h2>
+                <p>番茄鳄是一款专业的学习打卡与专注计时应用，帮助您养成良好的学习习惯，提高学习效率。</p>
+                <p>我们采用经典的番茄工作法，结合现代化的数据统计与社交功能，让学习变得更有趣、更有动力。</p>
+            </div>
+            
+            <div class="section">
+                <h2>✨ 主要功能</h2>
+                <ul class="feature-list">
+                    <li>番茄钟专注计时，科学管理学习时间</li>
+                    <li>学习热力图，像 GitHub 一样展示你的努力</li>
+                    <li>学习圈功能，与好友一起学习进步</li>
+                    <li>排行榜系统，激励持续学习</li>
+                    <li>成就系统，记录每一个里程碑</li>
+                    <li>数据统计，全面了解学习情况</li>
+                    <li>云端同步，多设备数据无缝衔接</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>❓ 常见问题</h2>
+                
+                <div class="faq-item">
+                    <h3>Q: 如何开始使用番茄钟？</h3>
+                    <p>A: 打开应用后，点击首页的"开始学习"按钮，选择番茄钟模式，设置专注时长后即可开始计时。完成后会自动记录到您的学习数据中。</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Q: 学习数据会丢失吗？</h3>
+                    <p>A: 注册登录后，您的学习数据会自动同步到云端，即使更换设备也不会丢失。游客模式下数据仅保存在本地。</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Q: 如何加入学习圈？</h3>
+                    <p>A: 在"学习圈"页面，您可以通过邀请码加入好友的学习圈，或创建自己的学习圈邀请朋友加入。</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Q: Pro会员有什么特权？</h3>
+                    <p>A: Pro会员可享受无限制的数据统计查看、更多学习圈名额、专属头像框、去除广告等特权功能。</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Q: 如何取消订阅？</h3>
+                    <p>A: 打开 iPhone "设置" > 点击您的 Apple ID > "订阅" > 找到"番茄鳄"并取消订阅。取消后，您仍可使用至当前订阅期结束。</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="contact-card">
+                    <h2>📧 联系我们</h2>
+                    <p>如果您在使用过程中遇到任何问题，或有任何建议和反馈，欢迎随时联系我们：</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="icon">📮</span>
+                            <span>邮箱：</span>
+                            <a href="mailto:3650268754@qq.com">3650268754@qq.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">👨‍💻</span>
+                            <span>开发者：RikSong</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <span>地址：福建省福州市鼓楼区</span>
+                        </div>
+                    </div>
+                    
+                    <div class="response-time">
+                        💡 我们承诺在 <strong>48小时内</strong> 回复您的邮件
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024-2026 番茄鳄 (FocusCroc). All Rights Reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="privacy_zh.html">隐私政策</a> | 
+                <a href="terms_zh.html">服务条款</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
